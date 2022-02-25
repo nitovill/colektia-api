@@ -1,6 +1,6 @@
 CREATE DATABASE colektia;
 USE colektia;
-CREATE TABLE employee (
+CREATE TABLE employees (
     id VARCHAR(255) NOT NULL PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,

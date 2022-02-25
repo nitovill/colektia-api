@@ -31,7 +31,7 @@ const getEmployeeDetail = async (id) => {
   return await Employee.findByPk(id);
 };
 const getEmployees = async () => {
-  return await Employee.findAll();
+  return await Employee.findAll({ where: { disabled: false } });
 };
 
 const updateEmployee = async (id, data) => {
