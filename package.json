@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "COPY .env.example .env && nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
+    "multer": "^1.4.4",
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.2",
     "uuid": "^8.3.2"
